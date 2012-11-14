@@ -2,6 +2,7 @@
 #include "Commands_Inventory.h"
 #include "Commands_Input.h"
 #include "Commands_FileIO.h"
+#include "Commands_Emotiv.h"
 #include "Commands_Console.h"
 #include "Commands_Math.h"
 #include "Commands_Player.h"
@@ -3162,6 +3163,13 @@ void CommandTable::Init(void)
 	g_scriptCommands.Add(&kCommandInfo_RemoveAllSpells); // had some crashing problems
 	g_scriptCommands.Add(&kCommandInfo_SetScriptedEffectItem);
 	*/
+
+
+	/* Emotiv */
+	g_scriptCommands.Add(&kCommandInfo_EmotivTest);
+	g_scriptCommands.Add(&kCommandInfo_RunIpconfig);
+	g_scriptCommands.Add(&kCommandInfo_ConsumerStart);
+	g_scriptCommands.Add(&kCommandInfo_ConsumerGet);
 
 #ifdef _DEBUG
 	// only for testing, don't use in scripts
